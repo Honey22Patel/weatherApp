@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font - Awnsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Moments -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="weather-container">
+      <div class="weather-details text-center">
+          <div class="search-location mb-3 d-flex justify-content-center">
+            <input type="text" id="city" placeholder="Search City" class="search-city">
+            <span><i class="fa-solid fa-magnifying-glass search-icon" id="search"></i></span>
+          </div>
+          <div class="weather-data">
+            <div class="weather-location mb-3">
+              <div class="city-name">Ahmedabad</div>
+              <div class="day-date">
+                <span class="date">January 1, 2025</span></div>
+            </div>
+            <div class="temperature-detail mb-5">
+              <img src="" alt="" id="temperature-img">
+              <div class="d-flex justify-content-center">
+                <h1 class="temperature">25</h1>
+                <div class="units">
+                  <button id="celcius" disabled>°C</button> | 
+                  <button id="farenheit">°F</button></div>
+              </div>
+              <h6 class="description">Mist</h6>
+            </div>
+            <div class="d-flex justify-content-around">
+              <div class="humidity d-flex gap-3 align-items-center">
+                <div class="humidity-img">
+                  <img src="images/humidity.png" alt="humidity">
+                </div>
+                <div class="humidity-info">
+                  <div class="humidity-level">55%</div>
+                  <div class="humidity-title">Humidity</div>
+                </div>
+              </div>
+              <div class="wind d-flex gap-3 align-items-center">
+                <div class="wind-img">
+                  <img src="images/wind.png" alt="wind">
+                </div>
+                <div class="wind-info">
+                  <div class="wind-speed">3 km/h</div>
+                  <div class="wind-title">Wind</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
